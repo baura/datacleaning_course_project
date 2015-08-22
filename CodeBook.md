@@ -1,7 +1,6 @@
-# datacleaning_course_project
-This repo contains my course project for the Coursera course "Getting and Cleaning data" of August 2015
-
 Please, in order to run the program, make sure your working directory is the one containing UCI HAR Dataset.
+
+Here is my procedure:
 First of all I extracted the file named X_train and X_test, respectively in the directories train and test, creating two separate datasets.
 Then I extracted the names of the subjects for each measurement, both of train set and test set, form the .txt files subject_train.txt and subject_test.txt .
 Afterwards I extracted the correspondent activities per measurement, both of train set and test set, stored in the files y_train.txt and y_test.txt.
@@ -32,3 +31,56 @@ Then I changed the names of the columns so that it was clear I was referring to 
 At the end of each iteration the resulting data frame was attached to the one made previously and then the all data frame was rearranged according to the Subject ids.
 
 As I had Subject and Measure as last column, I preferred to put them as first and second. 
+
+Measures included:
+"tBodyAcc-mean()-X"                    "tBodyAcc-mean()-Y"                   
+"tBodyAcc-mean()-Z"                    "tGravityAcc-mean()-X"                
+"tGravityAcc-mean()-Y"                 "tGravityAcc-mean()-Z"                
+"tBodyAccJerk-mean()-X"                "tBodyAccJerk-mean()-Y"               
+"tBodyAccJerk-mean()-Z"                "tBodyGyro-mean()-X"                  
+"tBodyGyro-mean()-Y"                   "tBodyGyro-mean()-Z"                  
+"tBodyGyroJerk-mean()-X"               "tBodyGyroJerk-mean()-Y"              
+"tBodyGyroJerk-mean()-Z"               "tBodyAccMag-mean()"                  
+"tGravityAccMag-mean()"                "tBodyAccJerkMag-mean()"              
+"tBodyGyroMag-mean()"                  "tBodyGyroJerkMag-mean()"             
+"fBodyAcc-mean()-X"                    "fBodyAcc-mean()-Y"                   
+"fBodyAcc-mean()-Z"                    "fBodyAcc-meanFreq()-X"               
+"fBodyAcc-meanFreq()-Y"                "fBodyAcc-meanFreq()-Z"               
+"fBodyAccJerk-mean()-X"                "fBodyAccJerk-mean()-Y"               
+"fBodyAccJerk-mean()-Z"                "fBodyAccJerk-meanFreq()-X"           
+"fBodyAccJerk-meanFreq()-Y"            "fBodyAccJerk-meanFreq()-Z"           
+"fBodyGyro-mean()-X"                   "fBodyGyro-mean()-Y"                  
+"fBodyGyro-mean()-Z"                   "fBodyGyro-meanFreq()-X"              
+"fBodyGyro-meanFreq()-Y"               "fBodyGyro-meanFreq()-Z"              
+"fBodyAccMag-mean()"                   "fBodyAccMag-meanFreq()"              
+"fBodyBodyAccJerkMag-mean()"           "fBodyBodyAccJerkMag-meanFreq()"      
+"fBodyBodyGyroMag-mean()"              "fBodyBodyGyroMag-meanFreq()"         
+"fBodyBodyGyroJerkMag-mean()"          "fBodyBodyGyroJerkMag-meanFreq()"     
+"angle(tBodyAccMean,gravity)"          "angle(tBodyAccJerkMean),gravityMean)"
+"angle(tBodyGyroMean,gravityMean)"     "angle(tBodyGyroJerkMean,gravityMean)"
+"angle(X,gravityMean)"                 "angle(Y,gravityMean)"                
+"angle(Z,gravityMean)"                 "tBodyAcc-std()-X"                    
+"tBodyAcc-std()-Y"                     "tBodyAcc-std()-Z"                    
+"tGravityAcc-std()-X"                  "tGravityAcc-std()-Y"                 
+"tGravityAcc-std()-Z"                  "tBodyAccJerk-std()-X"                
+"tBodyAccJerk-std()-Y"                 "tBodyAccJerk-std()-Z"                
+"tBodyGyro-std()-X"                    "tBodyGyro-std()-Y"                   
+"tBodyGyro-std()-Z"                    "tBodyGyroJerk-std()-X"               
+"tBodyGyroJerk-std()-Y"                "tBodyGyroJerk-std()-Z"               
+"tBodyAccMag-std()"                    "tGravityAccMag-std()"                
+"tBodyAccJerkMag-std()"                "tBodyGyroMag-std()"                  
+"tBodyGyroJerkMag-std()"               "fBodyAcc-std()-X"                    
+"fBodyAcc-std()-Y"                     "fBodyAcc-std()-Z"                    
+"fBodyAccJerk-std()-X"                 "fBodyAccJerk-std()-Y"               
+"fBodyAccJerk-std()-Z"                 "fBodyGyro-std()-X"                   
+"fBodyGyro-std()-Y"                    "fBodyGyro-std()-Z"                   
+ "fBodyAccMag-std()"                    "fBodyBodyAccJerkMag-std()"           
+"fBodyBodyGyroMag-std()"               "fBodyBodyGyroJerkMag-std()" 
+
+Their mean per subject per activity were then called:
+MEAN_WHILE_LAYING"             
+"MEAN_WHILE_SITTING"           
+"MEAN_WHILE_STANDING"           
+"MEAN_WHILE_WALKING"           
+"MEAN_WHILE_WALKING_DOWNSTAIRS" 
+"MEAN_WHILE_WALKING_UPSTAIRS"  
